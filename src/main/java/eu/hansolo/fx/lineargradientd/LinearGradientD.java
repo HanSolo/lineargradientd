@@ -62,9 +62,6 @@ public class LinearGradientD {
 
     public List<Stop> getStops() {
         return null == gradient ? new ArrayList<>() : gradient.getStops(); }
-    public void setStops(final List<Stop> stops) {
-        gradient.getStops().clear();
-        gradient.getStops().addAll(stops);
-    }
+    public void setStops(final List<Stop> stops) { init(angle, stops); }
 }
 
